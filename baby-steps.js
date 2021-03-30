@@ -1,0 +1,1 @@
+console.log(process.argv.slice(2,process.argv.length).map(i=>parseInt(i)).reduce((acc,i)=>acc+i))
