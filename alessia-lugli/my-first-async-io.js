@@ -1,4 +1,4 @@
-const fs = require('fs')
+const fs = require("fs")
 const file = process.argv[2]
 
 fs.readFile(file, function (err, contents) {
@@ -6,6 +6,6 @@ fs.readFile(file, function (err, contents) {
     return console.log(err)
   }
 
-  const lines = contents.toString().split('\n').length - 1
+  const lines = contents.toString().split("\n").length - 1
   console.log(lines)
 })
